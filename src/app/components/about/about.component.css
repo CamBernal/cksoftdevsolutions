@@ -1,0 +1,132 @@
+/* Estilos para el contenedor principal */
+.about-container {
+    padding: 60px 20px;
+    background-color: #f0f4f4; /* Fondo suave */
+  }
+  
+  /* Sección "Acerca de Nosotros" */
+  .about-us-section {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  .about-us-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #009688; /* Azul turquesa */
+    font-weight: bold;
+  }
+  
+  .about-us-section p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555; /* Texto gris oscuro */
+  }
+  
+  .about-us-section img {
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px; /* Ajuste de tamaño */
+  }
+  
+  /* Sección de Misión y Visión */
+  .mission-vision-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+  }
+  
+  .mission, .vision {
+    background: #e0f2f1; /* Fondo azul turquesa claro */
+    border-radius: 10px;
+    padding: 30px;
+    margin: 10px;
+    flex: 1 1 300px; /* Tamaño flexible */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .mission h3, .vision h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #009688; /* Azul turquesa */
+  }
+  
+  .mission p, .vision p {
+    font-size: 1rem;
+    color: #666; /* Texto gris */
+  }
+  
+  /* Sección del Equipo */
+  .team-section {
+    text-align: center;
+  }
+  
+  .team-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #009688; /* Azul turquesa */
+  }
+  
+  .team-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .team-member {
+    background: #ffffff; /* Fondo blanco */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    flex: 1 1 200px; /* Tamaño flexible */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .team-member img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .team-member h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #00796b; /* Azul turquesa oscuro */
+  }
+  
+  .team-member p {
+    font-size: 1rem;
+    color: #444; /* Texto gris oscuro */
+  }
+  
+  /* Efecto hover para miembros del equipo */
+  .team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .about-us-section h2 {
+      font-size: 2rem;
+    }
+  
+    .about-us-section p {
+      font-size: 1rem;
+    }
+  
+    .mission, .vision {
+      flex: 1 1 100%; /* Se apilan en pantallas pequeñas */
+    }
+  
+    .team-member {
+      flex: 1 1 100%; /* Se apilan en pantallas pequeñas */
+    }
+  }
+  

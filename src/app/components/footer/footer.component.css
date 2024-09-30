@@ -1,0 +1,68 @@
+/* Footer */
+footer {
+  background-color: #282828; /* Fondo oscuro */
+  color: #fff; /* Texto claro */
+  padding: 20px 0; /* Espaciado */
+  text-align: center; /* Centrado del texto */
+  width: 100%; /* Ancho completo */
+  position: relative; /* Posicionamiento relativo */
+  bottom: 0; /* Fijo al fondo */
+}
+
+.footer-container {
+  max-width: 1200px; /* Ancho máximo */
+  margin: 0 auto; /* Centrado horizontal */
+  display: flex; /* Flexbox */
+  justify-content: center; /* Centrar el contenido horizontalmente */
+  align-items: center; /* Alinear verticalmente */
+  gap: 40px; /* Espacio entre logo y redes sociales */
+}
+
+.footer-logo {
+  display: flex; /* Flexbox para alinear logo y nombre */
+  align-items: center; /* Alinear verticalmente */
+  gap: 10px; /* Espacio entre logo y nombre */
+}
+
+.footer-logo img {
+  width: 120px; /* Tamaño del logo */
+}
+
+.company-name {
+  font-size: 18px; /* Tamaño del nombre de la empresa */
+  font-weight: bold; /* Negrita para el nombre */
+  color: #fff; /* Color del nombre */
+}
+
+.footer-social {
+  display: flex; /* Flexbox para íconos sociales */
+  gap: 20px; /* Espaciado entre íconos */
+}
+
+.footer-social a {
+  color: #fff; /* Color de los íconos */
+  font-size: 20px; /* Tamaño de los íconos */
+  transition: color 0.3s ease; /* Transición de color */
+}
+
+.footer-social a:hover {
+  color: #2d98da; /* Efecto de hover */
+}
+
+.footer-copyright {
+  margin-top: 20px; /* Margen superior */
+  font-size: 14px; /* Tamaño del texto */
+  color: #b0b0b0; /* Color suave para el copyright */
+}
+
+/* Footer Responsivo */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column; /* Apilar en pantallas pequeñas */
+    gap: 15px; /* Espaciado entre elementos */
+  }
+
+  .footer-social {
+    justify-content: center; /* Centrar íconos en pantallas pequeñas */
+  }
+}

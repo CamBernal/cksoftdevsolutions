@@ -1,0 +1,63 @@
+/* Navbar */
+header {
+  background-color: #ffffff; /* Fondo blanco */
+  padding: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Sombra sutil */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between; /* Espacio entre logo y menú */
+  align-items: center;
+  width: 85%;
+  margin: 0 auto;
+}
+
+/* Estilo para el logo */
+.logo {
+  display: flex;
+  align-items: center; /* Alinea verticalmente el logo y el texto */
+}
+
+.logo-img {
+  width: 50px; /* Ajusta el tamaño del logo */
+  height: auto; /* Mantiene la proporción */
+  margin-right: 10px; /* Espacio entre el logo y el nombre de la marca */
+}
+
+header .logo h1 {
+  font-size: 24px;
+  color: #1a1a1a; /* Color negro para el logo */
+}
+
+nav .menu {
+  list-style: none; /* Sin puntos en la lista */
+  display: flex;
+  gap: 20px; /* Espacio entre los enlaces */
+}
+
+nav .menu li a {
+  color: #1a1a1a; /* Color de los enlaces */
+  text-decoration: none; /* Quitar el subrayado */
+  font-weight: bold;
+}
+
+nav .menu li a:hover {
+  color: #2d98da; /* Cambia a azul cuando pasas el ratón por encima */
+}
+
+/* Responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+  }
+
+  nav .menu {
+    flex-direction: column; /* Colocar el menú en columna */
+    gap: 10px; /* Reducir el espacio entre enlaces */
+  }
+}
