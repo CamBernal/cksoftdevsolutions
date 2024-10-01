@@ -55,14 +55,51 @@ footer {
   color: #b0b0b0; /* Color suave para el copyright */
 }
 
-/* Footer Responsivo */
+/* Footer Responsivo para Tablets */
 @media (max-width: 768px) {
   .footer-container {
-    flex-direction: column; /* Apilar en pantallas pequeñas */
-    gap: 15px; /* Espaciado entre elementos */
+    flex-direction: column; /* Apilar los elementos en pantallas medianas */
+    gap: 20px; /* Espaciado entre los elementos */
   }
 
-  .footer-social {
-    justify-content: center; /* Centrar íconos en pantallas pequeñas */
+  .footer-logo img {
+    width: 100px; /* Reducir el tamaño del logo */
+  }
+
+  .company-name {
+    font-size: 16px; /* Reducir tamaño del nombre de la empresa */
+  }
+
+  .footer-social a {
+    font-size: 18px; /* Reducir el tamaño de los íconos sociales */
+  }
+}
+
+/* Footer Responsivo para Móviles */
+@media (max-width: 480px) {
+  footer {
+    padding: 15px 0; /* Reducir el padding en móviles */
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 10px; /* Reducir el espacio entre los elementos */
+  }
+
+  .footer-logo img {
+    width: 80px; /* Reducir aún más el tamaño del logo */
+  }
+
+  .company-name {
+    font-size: 14px; /* Ajustar el tamaño del texto en móviles */
+  }
+
+  .footer-social a {
+    font-size: 16px; /* Reducir aún más los íconos en móviles */
+  }
+
+  .footer-copyright {
+    font-size: 12px; /* Reducir el tamaño del texto de copyright */
+    margin-top: 15px; /* Ajustar el margen superior */
   }
 }

@@ -17,18 +17,21 @@
 }
 
 .hero-content h1 span {
-  color: #0a606b; /* Azul turquesa */
+  color: #0a606b;
+  /* Azul turquesa */
 }
 
 .hero-content p {
   font-size: 1.5rem;
   margin: 20px 0;
   animation: fadeInUp 1.5s ease;
-  color: #005865; /* Azul turquesa */
+  color: #005865;
+  /* Azul turquesa */
 }
 
 .hero-content .btn {
-  background-color: #00bcd4; /* Azul turquesa */
+  background-color: #00bcd4;
+  /* Azul turquesa */
   padding: 10px 25px;
   color: white;
   font-size: 1.2rem;
@@ -38,31 +41,50 @@
 }
 
 .hero-content .btn:hover {
-  background-color: #0097a7; /* Azul más oscuro */
+  background-color: #0097a7;
+  /* Azul más oscuro */
 }
 
 /* Animaciones */
 @keyframes fadeInDown {
-  from { opacity: 0; transform: translateY(-20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-/* Sección de "Sobre Nosotros" con azul turquesa */
+/* Sección de "Sobre Nosotros" */
 .about-section {
   padding: 80px 0;
-  background: #e0f7fa; /* Fondo claro */
-  color: #00796b; /* Texto verde oscuro */
+  background: #e0f7fa;
+  /* Fondo claro */
+  color: #00796b;
+  /* Texto verde oscuro */
   text-align: center;
+  width: 100%;
 }
 
 .about-section h2 {
   font-size: 2.5rem;
-  color: #00796b; /* Texto verde oscuro */
+  color: #00796b;
+  /* Texto verde oscuro */
   margin-bottom: 30px;
 }
 
@@ -70,13 +92,15 @@
   max-width: 800px;
   margin: 0 auto;
   font-size: 1.2rem;
-  color: #004d40; /* Texto aún más oscuro */
+  color: #004d40;
+  /* Texto aún más oscuro */
 }
 
-/* Sección de Servicios con azul turquesa */
+/* Sección de Servicios */
 .services-section {
   padding: 80px 0;
-  background: #ffffff; /* Fondo blanco */
+  background: #ffffff;
+  /* Fondo blanco */
 }
 
 .services-section h2 {
@@ -93,31 +117,36 @@
 }
 
 .service {
-  background: #b2ebf2; /* Azul turquesa claro */
+  background: #b2ebf2;
+  /* Azul turquesa claro */
   padding: 30px;
   border-radius: 15px;
-  width: 300px;
+  width: 280px;
   text-align: center;
   margin-bottom: 30px;
-  color: #004d40; /* Texto verde oscuro */
+  color: #004d40;
+  /* Texto verde oscuro */
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .service i {
   font-size: 3rem;
-  color: #00796b; /* Azul turquesa oscuro */
+  color: #00796b;
+  /* Azul turquesa oscuro */
 }
 
 .service h3 {
   font-size: 1.8rem;
   margin: 20px 0;
-  color: #00796b; /* Azul turquesa oscuro */
+  color: #00796b;
+  /* Azul turquesa oscuro */
 }
 
 .service p {
   font-size: 1.1rem;
-  color: #004d40; /* Texto aún más oscuro */
+  color: #004d40;
+  /* Texto aún más oscuro */
 }
 
 .service:hover {
@@ -125,31 +154,67 @@
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Footer Section */
-footer {
-  padding: 20px 0;
-  text-align: center;
-  background-color: #333;
-  color: #fff;
-}
-
 /* Responsivo */
 @media (max-width: 768px) {
   .hero-content h1 {
     font-size: 2.5rem;
+    /* Reducir el tamaño del título */
   }
 
   .hero-content p {
     font-size: 1rem;
+    /* Reducir tamaño del párrafo */
   }
 
   .services {
     flex-direction: column;
+    /* Apilar servicios en móviles */
     align-items: center;
+    /* Centrar servicios */
   }
 
   .service {
     width: 100%;
-    max-width: 400px;
+    /* Ancho completo en dispositivos pequeños */
+    max-width: 380px;
+    /* Tamaño máximo */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 2rem;
+    /* Ajustar aún más para pantallas pequeñas */
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+    /* Ajustar tamaño del texto en móviles */
+  }
+
+  .hero-content .btn {
+    font-size: 1rem;
+    /* Reducir el tamaño del botón */
+    padding: 8px 20px;
+    /* Ajustar padding */
+  }
+
+  .about-section {
+    width: 100%;
+  }
+
+  .about-section h2 {
+    font-size: 2rem;
+    /* Reducir tamaño del título en móviles */
+  }
+
+  .about-section p {
+    font-size: 1rem;
+    /* Reducir tamaño del párrafo */
+  }
+
+  .service {
+    padding: 10px;
+    /* Reducir padding en móviles */
   }
 }

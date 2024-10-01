@@ -50,14 +50,80 @@ nav .menu li a:hover {
   color: #2d98da; /* Cambia a azul cuando pasas el ratón por encima */
 }
 
+/* Icono de hamburguesa para dispositivos móviles */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background-color: #1a1a1a;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
 /* Responsivo para pantallas pequeñas */
 @media (max-width: 768px) {
   header .container {
     flex-direction: column;
   }
 
+  .menu-toggle {
+    display: flex;
+  }
+
   nav .menu {
     flex-direction: column; /* Colocar el menú en columna */
     gap: 10px; /* Reducir el espacio entre enlaces */
+    display: none; /* Esconder el menú por defecto */
   }
+
+  nav .menu.show {
+    display: flex; /* Mostrar el menú cuando se haga clic en el ícono */
+  }
+
+  nav .menu li a {
+    font-size: 18px; /* Ajustar el tamaño de la fuente */
+  }
+}
+
+/* Responsivo para pantallas pequeñas */
+@media (max-width: 480px) {
+  header .container {
+    flex-direction: column;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  nav .menu {
+    flex-direction: column; /* Colocar el menú en columna */
+    gap: 8px; /* Reducir el espacio entre enlaces */
+    display: none; /* Esconder el menú por defecto */
+  }
+
+  nav .menu.show {
+    display: flex; /* Mostrar el menú cuando se haga clic en el ícono */
+  }
+
+  nav .menu li a {
+    font-size: 16px; /* Ajustar el tamaño de la fuente */
+  }
+}
+
+/* Animación para el menú desplegable */
+.menu-toggle.active span:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -5px);
 }

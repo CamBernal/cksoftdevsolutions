@@ -110,6 +110,53 @@
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   }
+
+  /* Responsivo para móviles más pequeños */
+@media (max-width: 480px) {
+  .about-container {
+    padding: 40px 10px;
+  }
+  .about-us-section img {
+    display: none;
+  }
+  .about-us-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-us-section p {
+    font-size: 0.9rem;
+  }
+
+  .mission, .vision {
+    padding: 20px;
+    flex: 1 1 100%;
+    margin: 5px;
+    text-align: center;
+  }
+
+  .team-section h2 {
+    font-size: 2rem;
+  }
+
+  .team-member {
+    padding: 15px;
+    margin: 10px;
+    flex: 1 1 100%;
+  }
+
+  .team-member img {
+    width: 80px; /* Ajustar el tamaño de las imágenes del equipo */
+  }
+
+  .team-member h3 {
+    font-size: 1.2rem;
+  }
+
+  .team-member p {
+    font-size: 0.9rem;
+  }
+}
+
   
   /* Responsivo */
   @media (max-width: 768px) {
